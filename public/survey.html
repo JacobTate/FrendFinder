@@ -172,7 +172,10 @@
     var q10 = $(".q10").val();
     var name = $("#name").val();
     var image = $("#imageInput").val();
-    
+    if (name === "" || image === "" || name === "" && image === "") {
+      alert("fill out all fields please")
+    }
+    else{
     var apiObj = {
 Name: name,
 Image: image,
@@ -181,8 +184,28 @@ scores: [
     q6,q7,q8,q9,q10
 ]
     };
-    console.log(apiObj);
-    
+  $.ajax({
+    method: "POST",
+    url: "/api/frends",
+    data: apiObj
+  }).then(
+    function(res){
+     alert("Sucessfully entered!");
+      var q1 = $(".q1").val("1");
+    var q2 = $(".q2").val("1");
+    var q3 = $(".q3").val("1");
+    var q4 = $(".q4").val("1");
+    var q5 = $(".q5").val("1");
+    var q6 = $(".q6").val("1");
+    var q7 = $(".q7").val("1");
+    var q8 = $(".q8").val("1");
+    var q9 = $(".q9").val("1");
+    var q10 = $(".q10").val("1");
+    var name = $("#name").val("");
+    var image = $("#imageInput").val("");
+    }
+  );
+}
      
  });
       </script>
