@@ -177,6 +177,19 @@
       alert("fill out all fields please")
     }
     else{
+      var scoresArr = [];
+
+      var  subjectScores = [
+    q1,q2,q3,q4,q5,
+    q6,q7,q8,q9,q10
+]
+var number2 = 0;
+for (let x = 0; x < subjectScores.length; x++) {
+  number2 += parseInt(subjectScores[x]);
+}
+
+
+
       $.ajax({
 method: "GET",
 url: "/api/frends"
@@ -189,41 +202,53 @@ url: "/api/frends"
        number += parseInt(scores[j]);
        
      }
-     console.log(number);
+     scoresArr.push(number);
      };  
+     var smallestNum = 50;
+     var closestUser = 0;
+for (let y = 0; y < scoresArr.length; y++) {
+ var numChecker =  Math.abs(scoresArr[y] - number2);
+ if (numChecker < smallestNum) {
+   smallestNum = numChecker;
+   closestUser = y;
+ }
+ 
+};
+alert(res[closestUser].Name);
     });
-    var apiObj = {
-Name: name,
-Image: image,
-scores: [
-    q1,q2,q3,q4,q5,
-    q6,q7,q8,q9,q10
-]
-    };
+ 
+//     var apiObj = {
+// Name: name,
+// Image: image,
+// scores: [
+//     q1,q2,q3,q4,q5,
+//     q6,q7,q8,q9,q10
+// ]
+//     };
     
-  $.ajax({
-    method: "POST",
-    url: "/api/frends",
-    data: apiObj
-  }).then(
-    function(res){
-     alert("Sucessfully entered!");
-      var q1 = $(".q1").val("1");
-    var q2 = $(".q2").val("1");
-    var q3 = $(".q3").val("1");
-    var q4 = $(".q4").val("1");
-    var q5 = $(".q5").val("1");
-    var q6 = $(".q6").val("1");
-    var q7 = $(".q7").val("1");
-    var q8 = $(".q8").val("1");
-    var q9 = $(".q9").val("1");
-    var q10 = $(".q10").val("1");
-    var name = $("#name").val("");
-    var image = $("#imageInput").val("");
+//   $.ajax({
+//     method: "POST",
+//     url: "/api/frends",
+//     data: apiObj
+//   }).then(
+//     function(res){
+//      alert("Sucessfully entered!");
+//       var q1 = $(".q1").val("1");
+//     var q2 = $(".q2").val("1");
+//     var q3 = $(".q3").val("1");
+//     var q4 = $(".q4").val("1");
+//     var q5 = $(".q5").val("1");
+//     var q6 = $(".q6").val("1");
+//     var q7 = $(".q7").val("1");
+//     var q8 = $(".q8").val("1");
+//     var q9 = $(".q9").val("1");
+//     var q10 = $(".q10").val("1");
+//     var name = $("#name").val("");
+//     var image = $("#imageInput").val("");
 
-    }
+//     }
     
-  );
+ // );
   
 }
 
