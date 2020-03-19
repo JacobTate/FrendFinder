@@ -1,258 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://kit.fontawesome.com/3b1f4db98f.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey</title>
+  <script src="https://kit.fontawesome.com/3b1f4db98f.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
+
 <body>
-    <h1>Servey Questions</h1>
-    <hr>
-    <h2>About You</h2>
-    <h4>Name (required)</h4>
-    <div class="input-group input-group-sm mb-3">
-        <div class="input-group-prepend">
-        </div>
-        <input type="text" class="form-control" id="name" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-md">
-      </div>
-      <h4>Link to your image (required)</h4>
-      <div class="input-group input-group-sm mb-3">
-        <div class="input-group-prepend">
-        </div>
-        <input type="text" class="form-control" id="imageInput" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-md">
-      </div>
-      <hr><br>
-      <!--dropdown-->
-      <h1>Question 1</h1>
-      <h4>Your mind is always buzzing with unexplored ideas and plans.
-    </h4>
-      <select name="options" class="option q1">
-          <option value="1" placeholder="Select an option">1</option>
-          <option value="2" placeholder="Select an option">2</option>
-          <option value="3" placeholder="Select an option">3</option>
-          <option value="4" placeholder="Select an option">4</option>
-          <option value="5" placeholder="Select an option">5</option>
-        </select>
-           <!--dropdown-->
-      <h1>Question 2</h1>
-      <h4>Generally speaking, you rely more on your experience than your imagination.
-    </h4>
-      <select name="options" class="option q2">
-          <option value="1" placeholder="Select an option">1</option>
-          <option value="2" placeholder="Select an option">2</option>
-          <option value="3" placeholder="Select an option">3</option>
-          <option value="4" placeholder="Select an option">4</option>
-          <option value="5" placeholder="Select an option">5</option>
-        </select>
-           <!--dropdown-->
-      <h1>Question 3</h1>
-      <h4>You find it easy to stay relaxed and focused even when there is some pressure.
-    </h4>
-      <select name="options" class="option q3">
-          <option value="1" placeholder="Select an option">1</option>
-          <option value="2" placeholder="Select an option">2</option>
-          <option value="3" placeholder="Select an option">3</option>
-          <option value="4" placeholder="Select an option">4</option>
-          <option value="5" placeholder="Select an option">5</option>
-        </select>
-           <!--dropdown-->
-      <h1>Question 4</h1>
-      <h4>You rarely do something just out of sheer curiosity.
-    </h4>
-      <select name="options" class="option q4">
-          <option value="1" placeholder="Select an option">1</option>
-          <option value="2" placeholder="Select an option">2</option>
-          <option value="3" placeholder="Select an option">3</option>
-          <option value="4" placeholder="Select an option">4</option>
-          <option value="5" placeholder="Select an option">5</option>
-        </select>
-           <!--dropdown-->
-      <h1>Question 5</h1>
-      <h4>People can rarely upset you.
-    </h4>
-      <select name="options" class="option q5">
-          <option value="1" placeholder="Select an option">1</option>
-          <option value="2" placeholder="Select an option">2</option>
-          <option value="3" placeholder="Select an option">3</option>
-          <option value="4" placeholder="Select an option">4</option>
-          <option value="5" placeholder="Select an option">5</option>
-        </select>
-           <!--dropdown-->
-      <h1>Question 6</h1>
-      <h4>It is often difficult for you to relate to other people’s feelings.
-    </h4>
-      <select name="options" class="option q6">
-          <option value="1" placeholder="Select an option">1</option>
-          <option value="2" placeholder="Select an option">2</option>
-          <option value="3" placeholder="Select an option">3</option>
-          <option value="4" placeholder="Select an option">4</option>
-          <option value="5" placeholder="Select an option">5</option>
-        </select>
-           <!--dropdown-->
-      <h1>Question 7</h1>
-      <h4>In a discussion, truth should be more important than people’s sensitivities.
-    </h4>
-      <select name="options" class="option q7">
-          <option value="1" placeholder="Select an option">1</option>
-          <option value="2" placeholder="Select an option">2</option>
-          <option value="3" placeholder="Select an option">3</option>
-          <option value="4" placeholder="Select an option">4</option>
-          <option value="5" placeholder="Select an option">5</option>
-        </select>
-           <!--dropdown-->
-      <h1>Question 8</h1>
-      <h4>You rarely get carried away by fantasies and ideas.
-    </h4>
-      <select name="options" class="option q8">
-          <option value="1" placeholder="Select an option">1</option>
-          <option value="2" placeholder="Select an option">2</option>
-          <option value="3" placeholder="Select an option">3</option>
-          <option value="4" placeholder="Select an option">4</option>
-          <option value="5" placeholder="Select an option">5</option>
-        </select>
-           <!--dropdown-->
-      <h1>Question 9</h1>
-      <h4>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.
-    </h4>
-      <select name="options" class="option q9">
-          <option value="1" placeholder="Select an option">1</option>
-          <option value="2" placeholder="Select an option">2</option>
-          <option value="3" placeholder="Select an option">3</option>
-          <option value="4" placeholder="Select an option">4</option>
-          <option value="5" placeholder="Select an option">5</option>
-        </select>
-           <!--dropdown-->
-      <h1>Question 10</h1>
-      <h4>You feel more energetic after spending time with a group of people.
-    </h4>
-      <select name="options" class="option q10">
-          <option value="1" placeholder="Select an option">1</option>
-          <option value="2" placeholder="Select an option">2</option>
-          <option value="3" placeholder="Select an option">3</option>
-          <option value="4" placeholder="Select an option">4</option>
-          <option value="5" placeholder="Select an option">5</option>
-        </select>
-<br>
-        <button id="submit" class="fas fa-check-square btn btn-primary btn-md"><h1>Submit</h1></button>
-        <hr>
-        <a href="/api/frends">all people</a> || <a href="https://github.com/JacobTate/FrendFinder">github link</a>
-      <style>
-          h1, h2, h4{
-              text-align: center;
-          }
-          .input-group{
-              width: 65%;
-              margin: auto;
-          }
-        
-    .option{
-        margin-left: 44%;
-        width: 200px;
-       margin-bottom: 60px;
-    }
-    #submit{
-        margin-left: 40%;
-        width: 300px;
-        margin-bottom: 20px;
-    }
-      </style>
-      <script>
- $("#submit").on("click", function(){
-    var q1 = $(".q1").val();
-    var q2 = $(".q2").val();
-    var q3 = $(".q3").val();
-    var q4 = $(".q4").val();
-    var q5 = $(".q5").val();
-    var q6 = $(".q6").val();
-    var q7 = $(".q7").val();
-    var q8 = $(".q8").val();
-    var q9 = $(".q9").val();
-    var q10 = $(".q10").val();
-    var name = $("#name").val();
-    var image = $("#imageInput").val();
-    if (name === "" || image === "" || name === "" && image === "") {
-      alert("fill out all fields please")
-    }
-    else{
-      var scoresArr = [];
-
-      var  subjectScores = [
-    q1,q2,q3,q4,q5,
-    q6,q7,q8,q9,q10
-]
-var number2 = 0;
-for (let x = 0; x < subjectScores.length; x++) {
-  number2 += parseInt(subjectScores[x]);
-}
-
-
-
-      $.ajax({
-method: "GET",
-url: "/api/frends"
-    }).then(function(res){
-     for (let i = 0; i < res.length; i++) {
-       var number = 0;
-     var scores = res[i].scores;
-     for (let j = 0; j < scores.length; j++) {
-       
-       number += parseInt(scores[j]);
-       
-     }
-     scoresArr.push(number);
-     };  
-     var smallestNum = 50;
-     var closestUser = 0;
-for (let y = 0; y < scoresArr.length; y++) {
- var numChecker =  Math.abs(scoresArr[y] - number2);
- if (numChecker < smallestNum) {
-   smallestNum = numChecker;
-   closestUser = y;
- }
- 
-};
-alert(res[closestUser].Name);
-    });
- 
-//     var apiObj = {
-// Name: name,
-// Image: image,
-// scores: [
-//     q1,q2,q3,q4,q5,
-//     q6,q7,q8,q9,q10
-// ]
-//     };
-    
-//   $.ajax({
-//     method: "POST",
-//     url: "/api/frends",
-//     data: apiObj
-//   }).then(
-//     function(res){
-//      alert("Sucessfully entered!");
-//       var q1 = $(".q1").val("1");
-//     var q2 = $(".q2").val("1");
-//     var q3 = $(".q3").val("1");
-//     var q4 = $(".q4").val("1");
-//     var q5 = $(".q5").val("1");
-//     var q6 = $(".q6").val("1");
-//     var q7 = $(".q7").val("1");
-//     var q8 = $(".q8").val("1");
-//     var q9 = $(".q9").val("1");
-//     var q10 = $(".q10").val("1");
-//     var name = $("#name").val("");
-//     var image = $("#imageInput").val("");
-
-//     }
-    
- // );
   
-}
+  <h1>Servey Questions</h1>
+  <hr>
+  <h2>About You</h2>
+  <h4>Name (required)</h4>
+  <div class="input-group input-group-sm mb-3">
+    <div class="input-group-prepend">
+    </div>
+    <input type="text" class="form-control" id="name" aria-label="Sizing example input"
+      aria-describedby="inputGroup-sizing-md">
+  </div>
+  <h4>Link to your image (required)</h4>
+  <div class="input-group input-group-sm mb-3">
+    <div class="input-group-prepend">
+    </div>
+    <input type="text" class="form-control" id="imageInput" aria-label="Sizing example input"
+      aria-describedby="inputGroup-sizing-md">
+  </div>
+  <hr><br>
+  <!--dropdown-->
+  <h1>Question 1</h1>
+  <h4>Your mind is always buzzing with unexplored ideas and plans.
+  </h4>
+  <select name="options" class="option q1">
+    <option value="" placeholder="Select an option">Select an option...</option>
+    <option value="1" placeholder="Select an option">1</option>
+    <option value="2" placeholder="Select an option">2</option>
+    <option value="3" placeholder="Select an option">3</option>
+    <option value="4" placeholder="Select an option">4</option>
+    <option value="5" placeholder="Select an option">5</option>
+  </select>
+  <!--dropdown-->
+  <h1>Question 2</h1>
+  <h4>Generally speaking, you rely more on your experience than your imagination.
+  </h4>
+  <select name="options" class="option q2">
+    <option value="" placeholder="Select an option">Select an option...</option>
+    <option value="1" placeholder="Select an option">1</option>
+    <option value="2" placeholder="Select an option">2</option>
+    <option value="3" placeholder="Select an option">3</option>
+    <option value="4" placeholder="Select an option">4</option>
+    <option value="5" placeholder="Select an option">5</option>
+  </select>
+  <!--dropdown-->
+  <h1>Question 3</h1>
+  <h4>You find it easy to stay relaxed and focused even when there is some pressure.
+  </h4>
+  <select name="options" class="option q3">
+    <option value="" placeholder="Select an option">Select an option...</option>
+    <option value="1" placeholder="Select an option">1</option>
+    <option value="2" placeholder="Select an option">2</option>
+    <option value="3" placeholder="Select an option">3</option>
+    <option value="4" placeholder="Select an option">4</option>
+    <option value="5" placeholder="Select an option">5</option>
+  </select>
+  <!--dropdown-->
+  <h1>Question 4</h1>
+  <h4>You rarely do something just out of sheer curiosity.
+  </h4>
+  <select name="options" class="option q4">
+    <option value="" placeholder="Select an option">Select an option...</option>
+    <option value="1" placeholder="Select an option">1</option>
+    <option value="2" placeholder="Select an option">2</option>
+    <option value="3" placeholder="Select an option">3</option>
+    <option value="4" placeholder="Select an option">4</option>
+    <option value="5" placeholder="Select an option">5</option>
+  </select>
+  <!--dropdown-->
+  <h1>Question 5</h1>
+  <h4>People can rarely upset you.
+  </h4>
+  <select name="options" class="option q5">
+    <option value="" placeholder="Select an option">Select an option...</option>
+    <option value="1" placeholder="Select an option">1</option>
+    <option value="2" placeholder="Select an option">2</option>
+    <option value="3" placeholder="Select an option">3</option>
+    <option value="4" placeholder="Select an option">4</option>
+    <option value="5" placeholder="Select an option">5</option>
+  </select>
+  <!--dropdown-->
+  <h1>Question 6</h1>
+  <h4>It is often difficult for you to relate to other people’s feelings.
+  </h4>
+  <select name="options" class="option q6">
+    <option value="" placeholder="Select an option">Select an option...</option>
+    <option value="1" placeholder="Select an option">1</option>
+    <option value="2" placeholder="Select an option">2</option>
+    <option value="3" placeholder="Select an option">3</option>
+    <option value="4" placeholder="Select an option">4</option>
+    <option value="5" placeholder="Select an option">5</option>
+  </select>
+  <!--dropdown-->
+  <h1>Question 7</h1>
+  <h4>In a discussion, truth should be more important than people’s sensitivities.
+  </h4>
+  <select name="options" class="option q7">
+    <option value="" placeholder="Select an option">Select an option...</option>
+    <option value="1" placeholder="Select an option">1</option>
+    <option value="2" placeholder="Select an option">2</option>
+    <option value="3" placeholder="Select an option">3</option>
+    <option value="4" placeholder="Select an option">4</option>
+    <option value="5" placeholder="Select an option">5</option>
+  </select>
+  <!--dropdown-->
+  <h1>Question 8</h1>
+  <h4>You rarely get carried away by fantasies and ideas.
+  </h4>
+  <select name="options" class="option q8">
+    <option value="" placeholder="Select an option">Select an option...</option>
+    <option value="1" placeholder="Select an option">1</option>
+    <option value="2" placeholder="Select an option">2</option>
+    <option value="3" placeholder="Select an option">3</option>
+    <option value="4" placeholder="Select an option">4</option>
+    <option value="5" placeholder="Select an option">5</option>
+  </select>
+  <!--dropdown-->
+  <h1>Question 9</h1>
+  <h4>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.
+  </h4>
+  <select name="options" class="option q9">
+    <option value="" placeholder="Select an option">Select an option...</option>
+    <option value="1" placeholder="Select an option">1</option>
+    <option value="2" placeholder="Select an option">2</option>
+    <option value="3" placeholder="Select an option">3</option>
+    <option value="4" placeholder="Select an option">4</option>
+    <option value="5" placeholder="Select an option">5</option>
+  </select>
+  <!--dropdown-->
+  <h1>Question 10</h1>
+  <h4>You feel more energetic after spending time with a group of people.
+  </h4>
+  <select name="options" class="option q10">
+    <option value="" placeholder="Select an option">Select an option...</option>
+    <option value="1" placeholder="Select an option">1</option>
+    <option value="2" placeholder="Select an option">2</option>
+    <option value="3" placeholder="Select an option">3</option>
+    <option value="4" placeholder="Select an option">4</option>
+    <option value="5" placeholder="Select an option">5</option>
+  </select>
+  <br>
+  <button id="submit" class="fas fa-check-square btn btn-primary btn-md">
+    <h1>Submit</h1>
+  </button>
+  <hr>
+  <a href="/api/frends">all people</a> || <a href="https://github.com/JacobTate/FrendFinder">github link</a>
+  <style>
+ 
+    h1,
+    h2,
+    h4 {
+      text-align: center;
+    }
 
- });
-      </script>
+    .input-group {
+      width: 65%;
+      margin: auto;
+    }
+
+    .option {
+      margin-left: 44%;
+      width: 200px;
+      margin-bottom: 60px;
+    }
+
+    #submit {
+      margin-left: 40%;
+      width: 300px;
+      margin-bottom: 20px;
+    }
+  </style>
+  <script>
+    $("#alert").hide();
+    //onclick for the submit button
+    $("#submit").on("click", function (e) {
+      e.preventDefault();
+      //gets the options and stores them
+      var q1 = $(".q1").val();
+      var q2 = $(".q2").val();
+      var q3 = $(".q3").val();
+      var q4 = $(".q4").val();
+      var q5 = $(".q5").val();
+      var q6 = $(".q6").val();
+      var q7 = $(".q7").val();
+      var q8 = $(".q8").val();
+      var q9 = $(".q9").val();
+      var q10 = $(".q10").val();
+      //stores the name and image
+      var name = $("#name").val();
+      var image = $("#imageInput").val();
+      //makes sure the name and image are filled out
+      if (name === "" || image === "" || name === "" && image === "") {
+        alert("fill out all fields please")
+      }
+       else if(q1 === "" || q2 === "" || q3 === "" || q4 === "" || q5 === "" || q6 === "" || q7 === "" ||q8 === "" || q9 === "" || q10 === ""){
+        alert("Please select all options"); 
+       }
+       else {
+
+        var scoresArr = [];
+        //an array of the user options
+        var subjectScores = [
+          q1, q2, q3, q4, q5,
+          q6, q7, q8, q9, q10
+        ]
+
+        var usrNum = 0;
+        //loop adds the scores to usrNum
+        for (let x = 0; x < subjectScores.length; x++) {
+          usrNum += parseInt(subjectScores[x]);
+        }
+
+
+        //gets the existing friends from the api
+        $.ajax({
+          method: "GET",
+          url: "/api/frends"
+        }).then(function (res) {
+          //loops the array of objects
+          for (let i = 0; i < res.length; i++) {
+            var number = 0;
+            //scores = the scores array of each object
+            var scores = res[i].scores;
+            for (let j = 0; j < scores.length; j++) {
+              //adds the scores to the number variable
+              number += parseInt(scores[j]);
+
+            }
+            //pushes each of the scores to the scoresArr array
+            scoresArr.push(number);
+          };
+          //smallestNum tracks the closest user match
+          var smallestNum = 50;
+          //closestUser is updated to the index of the closest user
+          var closestUser = 0;
+          //loops the scoresArr array
+          for (let y = 0; y < scoresArr.length; y++) {
+            //subtracts all of the existing scores from usrNum to find the closest match
+            var numChecker = Math.abs(scoresArr[y] - usrNum);
+            //if a number is smaller (closer to the user score) than the last update closestUser with that index
+            if (numChecker < smallestNum) {
+              smallestNum = numChecker;
+              closestUser = y;
+            }
+
+          };
+          //alerts the name and image of the best match
+         alert("Best Match " + res[closestUser].Name + " Image: " + res[closestUser].Image)
+          
+        });
+        //puts all of the user options and inputs in an object
+        var apiObj = {
+          Name: name,
+          Image: image,
+          scores: [
+            q1, q2, q3, q4, q5,
+            q6, q7, q8, q9, q10
+          ]
+        };
+        //posts the object to the api
+        $.ajax({
+          method: "POST",
+          url: "/api/frends",
+          data: apiObj
+        }).then(
+          function (res) {
+            //clears the options and inputs
+            var q1 = $(".q1").val("");
+            var q2 = $(".q2").val("");
+            var q3 = $(".q3").val("");
+            var q4 = $(".q4").val("");
+            var q5 = $(".q5").val("");
+            var q6 = $(".q6").val("");
+            var q7 = $(".q7").val("");
+            var q8 = $(".q8").val("");
+            var q9 = $(".q9").val("");
+            var q10 = $(".q10").val("");
+            var name = $("#name").val("");
+            var image = $("#imageInput").val("");
+
+          }
+
+        );
+
+      }
+
+    });
+  </script>
 </body>
+
 </html>
