@@ -1,6 +1,6 @@
-# FrendFinder
+# FriendFinder
 # created by Jacob Tate for Homework
-https://calm-meadow-07472.herokuapp.com/
+<a href="https://calm-meadow-07472.herokuapp.com/">Deployed Link</a>
 
 The friend finder app is like a dating app.
 When You open the app you will see a button and two links the button will take You to a survey.
