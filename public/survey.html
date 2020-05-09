@@ -12,7 +12,9 @@
 </head>
 
 <body>
-  <div id="alert"></div>
+  <div id="alert">
+  <button onclick="xButton();">X</button>
+  </div>
   <h1>Servey Questions</h1>
   <hr>
   <h2>About You</h2>
@@ -194,6 +196,9 @@
     }
   </style>
   <script>
+    function xButton () {
+      $("#alert").hide();
+    }
     $("#alert").hide();
     //onclick for the submit button
     $("#submit").on("click", function (e) {
